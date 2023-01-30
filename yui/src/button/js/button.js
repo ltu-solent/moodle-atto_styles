@@ -112,6 +112,9 @@ Y.namespace('M.atto_styles').Button = Y.Base.create('button', Y.M.editor_atto.Ed
         var semanticblocks = ['<block>', '<h3>', '<h4>', '<h5>', '<blockquote>'];
         if (style[0] === '<nostyle>') {
             element = window.getSelection().focusNode;
+            if (!this.editor.contains(element)) {
+                return;
+            }
             for (p = element; p; p = p.parentNode) {
                 if (p.nodeType !== 1) {
                     continue;
@@ -127,6 +130,9 @@ Y.namespace('M.atto_styles').Button = Y.Base.create('button', Y.M.editor_atto.Ed
             var formatblock = (style[0] == '<block>') ? '<div>' : style[0];
             document.execCommand('formatBlock', false, formatblock);
             element = window.getSelection().focusNode;
+            if (!this.editor.contains(element)) {
+                return;
+            }
             for (p = element; p; p = p.parentNode) {
                 if (p.nodeType !== 1) {
                     continue;

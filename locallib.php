@@ -15,19 +15,26 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Atto styles - Version file
+ * Atto styles - Local library
  *
  * @package    atto_styles
- * @copyright  2015 Andrew Davidson, Synergy Learning UK <andrew.davidson@synergy-learning.com>
- *             on behalf of Alexander Bias, Ulm University <alexander.bias@uni-ulm.de>
+ * @copyright  2022 Moodle an Hochschulen e.V. <kontakt@moodle-an-hochschulen.de>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+/**
+ * Helper function to preprocess the plugin's JSON configuration.
+ *
+ * @param string $json The JSON configuration.
+ * @return string The processed JSON configuration.
+ */
+function atto_styles_preprocess_json($json) {
+    // Trim the entered data.
+    $json = trim($json);
 
-$plugin->component = 'atto_styles';
-$plugin->version = 2022071201;
-$plugin->release = 'v4.0-r2';
-$plugin->requires = 2022041900;
-$plugin->supported = [400, 400];
-$plugin->maturity = MATURITY_STABLE;
+    // Replace non-breaking spaces (which could especially occur if the admin copied the example on the settings page).
+    $json = str_replace("\xc2\xa0", ' ', $json);
+
+    // Return JSON.
+    return $json;
+}

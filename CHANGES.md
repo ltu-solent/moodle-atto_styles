@@ -6,6 +6,38 @@ Changes
 
 ### Unreleased
 
+* 2022-11-28 - Updated Moodle Plugin CI to latest upstream recommendations
+
+### v4.0-r2
+
+* 2022-11-26 - Bugfix: Styles might have been applied outside the editor on Firefox, credits to danowar2k.
+
+### v4.0-r1
+
+* 2022-11-26 - Prepare compatibility for Moodle 4.0.
+
+### v3.11-r1
+
+* 2022-11-26 - Prepare compatibility for Moodle 3.11.
+
+### v3.10-r1
+
+* 2022-11-26 - Prepare compatibility for Moodle 3.10.
+
+### v3.9-r2
+
+* 2022-11-26 - Add Capabilities section to README.md
+* 2022-11-26 - Updated Moodle Plugin CI to newer upstream recommendations
+* 2022-11-26 - Add UPGRADE.md as internal upgrade documentation
+* 2022-11-26 - Update maintainers and copyrights in README.md.
+* 2022-11-26 - Change in Moodle release support:
+               For the time being, this plugin is maintained for the most recent LTS release of Moodle as well as the most recent major release of Moodle.
+               Bugfixes are backported to the LTS release. However, new features and improvements are not necessarily backported to the LTS release.
+* 2022-11-26 - Improvement: Declare which major stable version of Moodle this plugin supports (see MDL-59562 for details).
+
+### v3.9-r1
+
+* 2022-11-26 - Improvement: Make the plugin's JSON configuration more robust against whitespace issues.
 * 2021-02-05 - Move Moodle Plugin CI from Travis CI to Github actions
 * 2020-10-14 - Changed styles for focusing and hovering of dropdown list items.
 * 2020-10-09 - Prepare compatibility for Moodle 3.9.

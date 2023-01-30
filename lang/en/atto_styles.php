@@ -44,7 +44,7 @@ $string['code_example_bootstrap_multiple'] = '[{<br />
 &nbsp;&nbsp;&nbsp;&nbsp;"classes": "alert alert-danger"<br />
 }]';
 $string['config'] = 'Styles configuration';
-$string['config_desc'] = 'Configuration for the styles widget for Atto in JSON format. <br /> You can find an extensive example in the README.md in the section <a href="https://github.com/moodleuulm/moodle-atto_styles/blob/master/README.md#usage--settings">"Usage & Settings"</a>.
+$string['config_desc'] = 'Configuration for the styles widget for Atto in JSON format. <br /> You can find an extensive example in the README.md in the section <a href="https://github.com/moodle-an-hochschulen/moodle-atto_styles/blob/master/README.md#usage--settings">"Usage & Settings"</a>.
 <hr />
 For example:<br />
 {$a->code_example}
@@ -77,9 +77,9 @@ For example:<br />
 <br/><br/>
 For more information about bootstrap classes, please visit the following links in the Bootstrap 4 documentation:
 <ul>
-<li><a href="https://getbootstrap.com/docs/4.3/components/badge/">Bootstrap badges</a></li>
-<li><a href="https://getbootstrap.com/docs/4.3/components/alerts/">Bootstrap alerts</a></li>
-<li><a href="https://getbootstrap.com/docs/4.3/utilities/">Bootstrap utilities</a></li>
+<li><a href="https://getbootstrap.com/docs/4.6/components/badge/">Bootstrap badges</a></li>
+<li><a href="https://getbootstrap.com/docs/4.6/components/alerts/">Bootstrap alerts</a></li>
+<li><a href="https://getbootstrap.com/docs/4.6/utilities/">Bootstrap utilities</a></li>
 </ul>
 <hr />
 Please note, that multiple definitions need to be surrounded by square brackets.
