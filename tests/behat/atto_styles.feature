@@ -22,6 +22,10 @@ Feature: Atto styles
           "title": "Warning text",
           "type": "inline",
           "classes": "label label-warning"
+      },{
+        "title": "Heading 3",
+        "type": "h3",
+        "classes": ""
       }]
       """
     And the config value "toolbar" of "editor_atto" is set as admin to multiline
@@ -120,3 +124,4 @@ Feature: Atto styles
       | text            | style           | html                                                 |
       | "i'm a hero"    | "Hero unit box" | "<div class=\"hero-unit\">i'm a hero</div>"          |
       | "help"          | "Muted Well"    | "<div class=\"well text-muted\">help</div>"          |
+      | "I'm a h3"      | "Heading 3"     | "<h3 class=\"\">I'm a h3"                            |
